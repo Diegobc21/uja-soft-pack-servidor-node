@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', softwareController.getAll)
 
 // Obtener todas las categorías
-router.get('/categoria', softwareController.categories)
+router.get('/categories', softwareController.categories)
 
 // Método para obtener software por nombre
 router.get('/:name', softwareController.getOne)
