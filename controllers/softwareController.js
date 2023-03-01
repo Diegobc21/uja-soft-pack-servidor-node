@@ -21,11 +21,13 @@ const getAll = (req, res) => {
 };
 
 const getOne = (req, res) => {
-    model.findOne({ nombre: req.params.name })
-        .then((object) => {
-            res.json(object)
-        })
-        .catch((error) => res.status(500).send(error))
+    if (req.params.name) {
+        model.findOne({ nombre: req.params.name })
+            .then((object) => {
+                res.json(object)
+            })
+            .catch((error) => res.status(500).send(error))
+    }
 };
 
 const categories = (req, res) => {

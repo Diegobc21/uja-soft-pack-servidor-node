@@ -7,7 +7,7 @@ dotenv.config()
 let uri = process.env.DB_URI
 
 // URI para desarrollo en local
-uri = 'mongodb://localhost:27017/local'
+// uri = 'mongodb://localhost:27017/local'
 
 // Opciones para el cliente
 const options = {
