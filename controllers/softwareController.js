@@ -7,7 +7,7 @@ const getAll = (req, res) => {
                 .then((object) => {
                     res.json(object)
                 })
-                .catch((error) => res.status(500).send(error))
+                .catch((error) => res.sendStatus(500).send(error))
         } else {
             res.send(500)
         }
@@ -16,7 +16,7 @@ const getAll = (req, res) => {
             .then((object) => {
                 res.json(object)
             })
-            .catch((error) => res.status(500).send(error))
+            .catch((error) => res.sendStatus(500).send(error))
     }
 };
 
@@ -26,7 +26,7 @@ const getOne = (req, res) => {
             .then((object) => {
                 res.json(object)
             })
-            .catch((error) => res.status(500).send(error))
+            .catch((error) => res.sendStatus(500).send(error))
     }
 };
 
@@ -35,7 +35,7 @@ const categories = (req, res) => {
         .then((object) => {
             res.json(object)
         })
-        .catch((error) => res.status(500).send(error))
+        .catch((error) => res.sendStatus(500).send(error))
 };
 
 export default {
