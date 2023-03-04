@@ -15,7 +15,6 @@ const options = {
     useUnifiedTopology: true
 };
 
-// Requerido
 mongoose.set('strictQuery', false)
 
 export default {
