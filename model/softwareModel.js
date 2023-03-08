@@ -10,14 +10,17 @@ const softwareSchema = new mongoose.Schema({
     required: true
   },
   categorias: {
-    posicionPrincipal: {
-      type: Number,
-      default: 0
+    type: {
+      posicionPrincipal: {
+        type: Number,
+        required: true
+      },
+      listado: {
+        type: [String],
+        required: true
+      }
     },
-    listado: {
-      type: [String],
-      required: true
-    }
+    required: true
   },
   descarga: {
     type: String,
