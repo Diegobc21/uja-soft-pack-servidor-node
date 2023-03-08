@@ -1,4 +1,4 @@
-import express from "express"
+import express from 'express'
 import softwareRoutes from './routes/softwareRoutes.js'
 import corsOptions from './middlewares/cors.js'
 import dotenv from 'dotenv'
@@ -24,4 +24,3 @@ app.use('/software', softwareRoutes)
 app.listen(port, () => {
   console.log(`Servidor funcionando en puerto ${port}`)
 })
-

@@ -12,5 +12,4 @@ router.get('/categories', softwareController.categories)
 // Método para obtener software por nombre
 router.get('/:name', softwareController.getOne)
 
-
 export default router

@@ -11,12 +11,16 @@
   "author": "Diego Barrales Castillo",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^5.1.0",
-    "mongoose": "^6.10.0",
-    "dotenv": "^16.0.3"
+    "mongoose": "^6.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }

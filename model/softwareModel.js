@@ -1,49 +1,49 @@
 import mongoose from 'mongoose'
 
 const softwareSchema = new mongoose.Schema({
-    nombre: {
-        type: String,
-        required: true
+  nombre: {
+    type: String,
+    required: true
+  },
+  descripcion: {
+    type: String,
+    required: true
+  },
+  categorias: {
+    posicionPrincipal: {
+      type: Number,
+      default: 0
     },
-    descripcion: {
-        type: String,
-        required: true
-    },
-    categorias: {
-        posicionPrincipal: {
-            type: Number,
-            default: 0
-        },
-        listado: {
-            type: [String],
-            required: true
-        }
-    },
-    descarga: {
-        type: String,
-        required: true
-    },
-    winget_id: {
-        type: String,
-        required: true
-    },
-    extras: [
-        {
-            titulo: {
-                type: String,
-                required: true
-            },
-            fuente: {
-                type: String,
-                required: true
-            }
-        }
-    ],
-    iconURL: {
-        type: String,
-        required: true
+    listado: {
+      type: [String],
+      required: true
     }
-});
+  },
+  descarga: {
+    type: String,
+    required: true
+  },
+  winget_id: {
+    type: String,
+    required: true
+  },
+  extras: [
+    {
+      titulo: {
+        type: String,
+        required: true
+      },
+      fuente: {
+        type: String,
+        required: true
+      }
+    }
+  ],
+  iconURL: {
+    type: String,
+    required: true
+  }
+})
 
 /**
  * softwareItem: nombre del modelo
