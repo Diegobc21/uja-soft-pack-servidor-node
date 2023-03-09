@@ -4,7 +4,6 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 // Conexión al cluster
-// eslint-disable-next-line prefer-const
 const uri = process.env.DB_URI || 'mongodb://localhost:27017/local'
 
 // Opciones para el cliente
