@@ -5,10 +5,7 @@ dotenv.config()
 
 // Conexión al cluster
 // eslint-disable-next-line prefer-const
-let uri = process.env.DB_URI
-
-// URI para desarrollo en local
-// uri = 'mongodb://localhost:27017/local'
+const uri = process.env.DB_URI || 'mongodb://localhost:27017/local'
 
 // Opciones para el cliente
 const options = {
