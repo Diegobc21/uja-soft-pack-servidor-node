@@ -50,7 +50,7 @@ const softwareSchema = new mongoose.Schema({
 
 /**
  * softwareItem: nombre del modelo
- * softwareSchema = esquema del modelo
- * software = nombre de la colección en la base de datos
+ * softwareSchema: esquema del modelo
+ * software: nombre de la colección en la base de datos
  */
 export default mongoose.model('softwareItem', softwareSchema, 'software')

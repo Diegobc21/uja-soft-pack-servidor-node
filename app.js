@@ -1,10 +1,10 @@
 import express from 'express'
+import dotenv from 'dotenv'
 import softwareRoutes from './routes/softwareRoutes.js'
 import corsOptions from './middlewares/cors.js'
-import dotenv from 'dotenv'
-import db from './config/db.js'
+import database from './config/db.js'
 
-db.connect()
+database.connect()
 dotenv.config()
 
 const port = process.env.PORT || 3000

@@ -3,10 +3,10 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-// Conexión al cluster
+// URI para conectar al cluster
 const uri = process.env.DB_URI || 'mongodb://localhost:27017/local'
 
-// Opciones para el cliente
+// Opciones para el cliente de MongoDB
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -14,6 +14,7 @@ const options = {
 
 mongoose.set('strictQuery', false)
 
+// Se exporta la función que inicia la conexión a la BBDD
 export default {
   connect: function () {
     mongoose.connect(
